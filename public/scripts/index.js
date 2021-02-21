@@ -1,15 +1,18 @@
 const indexController ='../src/controller/IndexController.php';
 
+const loginForm = document.getElementById('login-form')
 const submitBtn = document.getElementById('submit-btn');
-console.log(submitBtn);
 
 
-fetch(indexController).then(function(response) {
-  return response.json();
-}).then(function(json) {
-  console.log(json)
-}).catch(function(err) {
-  console.log('Fetch problem: ' + err.message);
-});
+
+function Request_Get (url, handler){
+  fetch(url).then((response) =>{
+    return response.json();
+  }).then((json) => handler(json)).catch(e => console.log(e.message))
+}
 
 
+
+const USER_LOGIN = snippet => console.log(snippet);
+
+Request_Get(indexController, USER_LOGIN);
