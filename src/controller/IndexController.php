@@ -8,7 +8,30 @@ session_start();
 $data=json_decode(file_get_contents("php://input"));
 
 $conn = new Connect();
-$loginController = new LoginController($conn->init());
+
+
+//make shift router
+if (preg_match( "/^\/login/i", $data->route)){
+    $loginController = new LoginController($conn->init());
+    
+    if(preg_match('/create$/i', $data->route)){
+      //echo 'in login create';
+      $response = $loginController->create($data);
+    } 
+    else{
+    //echo 'in login login';
+     $response = $loginController->login($data);
+    }
+}
+
+exit(json_encode($response));
+
+
+
+
+
+
+//$loginController = new LoginController($conn->init());
 
 
 

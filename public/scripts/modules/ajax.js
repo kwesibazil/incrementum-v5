@@ -38,4 +38,5 @@ const postTest = (snippet) => {
 };
 
 
+//EXPORT STATEMENT
 export {requestGet, requestPost, userLogin, postTest};
