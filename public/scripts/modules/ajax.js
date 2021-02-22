@@ -22,16 +22,20 @@ async function postData(url, data){
 }
 
 function requestPost (url, handler, data){
-  postData(url, data).then(response => {
-    console.log(response);
-    handler(response);
-  });
+  postData(url, data).then((response) => handler(response)).catch(e => console.log(e.message));
 }
 
 
 //HANDLERS
-const userLogin = snippet => console.log(snippet);
-const postTest = snippet => console.log(snippet);
+const userLogin = (snippet) => {
+  console.log("in the handler");
+  console.log(snippet);
+}
+
+const postTest = (snippet) => {
+  console.log("in the handler");
+  console.log(snippet);
+};
 
 
 export {requestGet, requestPost, userLogin, postTest};

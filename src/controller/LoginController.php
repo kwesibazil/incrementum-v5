@@ -12,8 +12,8 @@ class LoginController {
     return $this->loginModel->userLogin($data);
   }
 
-  public function create_user($email, $password, $privilege){
-    return $this->loginModel->createUser($email, $password, $privilege);
+  public function create($data){
+    return $this->loginModel->createUser($data);
   }
   
 
