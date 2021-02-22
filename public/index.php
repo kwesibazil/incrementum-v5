@@ -1,5 +1,6 @@
 <?php
   session_start();
+  $_SERVER['kwesi'] = 'session';
 ?>
 
 <!DOCTYPE html>
@@ -25,15 +26,14 @@
       <div class="col col-sm h-100 shadow-sm p-5 bg-body rounded">
         <div>
           <h3 class="fs-1 text-center">Log In</h3>
-          <!-- <form method="POST" action="../src/controller/IndexController.php" class="needs-validation" > -->
-          <form  method="POST" class="needs-validation" >
+          <form id="login-form" method="POST" class="needs-validation" >
             <div class="mb-3">
-              <label for="Email" class="form-label">Email address kwesi</label>
-              <input name="email" id="login-email"  type="email" class="form-control" >
+              <label for="Email" class="form-label">Email address</label>
+              <input name="email" id="login-email"  type="email" class="form-control" required>
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input name="password" id="login-Password" type="password"  class="form-control" >
+              <input name="password" id="login-Password" type="password"  class="form-control" required>
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="rememberMe">
@@ -47,7 +47,7 @@
   </div><!--CONTAINER FLUID ENDS HERE-->
 
 
-  <script src="scripts/index.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
 

@@ -1,15 +1,7 @@
-const indexController ='../src/controller/IndexController.php';
+import * as path from './modules/paths.js';
+import * as handler from './modules/handlers.js';
+import {requestGet, requestPost, userLogin, postTest} from './modules/ajax.js';
 
-const submitBtn = document.getElementById('submit-btn');
-console.log(submitBtn);
 
-
-fetch(indexController).then(function(response) {
-  return response.json();
-}).then(function(json) {
-  console.log(json)
-}).catch(function(err) {
-  console.log('Fetch problem: ' + err.message);
-});
 
 
