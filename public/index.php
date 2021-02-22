@@ -47,7 +47,7 @@
   </div><!--CONTAINER FLUID ENDS HERE-->
 
 
-  <script src="scripts/index.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
 
