@@ -49,6 +49,11 @@ html, body {
 }.h-10{
   height: 10%!important;
 }
-.h-min{
-  /*min-height: 33.3%;*/
+.card-height{
+  height: 112px;
+}
+
+.cell-padding tr td{
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
