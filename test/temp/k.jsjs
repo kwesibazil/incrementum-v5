@@ -1,0 +1,10 @@
+ var options = {
+          curveType: 'function',
+          intervals : { style : area, color : '#D49464' },
+          legend : { position : none },
+          height : 320
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+        window.addEventListener('resize', drawChart_dash, false);
