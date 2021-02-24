@@ -1,0 +1,1 @@
+<h2 class="fs-5 fw-bold text-dark">Statistics</h2>
