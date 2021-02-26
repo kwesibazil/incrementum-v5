@@ -1,9 +1,11 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-body">
   <div class="container-fluid px-2">
     <div class="row w-100  m-0 d-flex">
-      <a class="px-0 col-1" type="button" id="toggler-icon" data-bs-relatedTarget="hidden"  aria-controls="main-sideNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="px-0 col-1"  id="toggler-icon"  type="button" aria-expanded="false" data-bs-relatedTarget="hidden" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon fs-6 me-2"></span>
       </a>
+  
+
       <div id="main-header-navLinks" class="col-11 d-flex">
         <div class="col col-lg-4 d-none d-lg-block"> 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" me-1 bi bi-calendar-event-fill" viewBox="0 0 16 16">

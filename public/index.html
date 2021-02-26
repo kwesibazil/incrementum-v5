@@ -11,94 +11,57 @@
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <title>Incrementum PHP</title>
 </head>
-<body >
+<body>
 
   <div class="container-fluid h-100 p-0 w-100 d-flex">
-    <div class="row w-100 m-0">
-      <div id="main-SideNav" class="col-md col-xl d-none d-md-block px-md-1"></div><!--MAIN SIDENAV ENDS HERE-->
-      
-      <div id="main-layout" class="col-md-9 col-xl-10 px-0 border">
-        <header id="main-header"></header><!--HEADER ENDS HERE-->
-    
-        <div id="main-content" class="m-0 p-0">
-          <section class="p-2 pt-4">
-            <div class="glide ">
-              <div class="glide__track " data-glide-el="track">
-                <ul id="main-glider-slides" class="glide__slides">
-                  <li class="glide__slide"> 
-                    <div class="card card-height">
-                      <div class="card-body ">
-                        <h5 class="card-title fs-5">11</h5><!--title-->
-                        <p class="card-text fs-6 "></p><!--content-->
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card-height">
-                      <div class="card-body ">
-                        <h5 class="card-title fs-5">2</h5><!--title-->
-                        <p class="card-text fs-6 "></p><!--content-->
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card-height">
-                      <div class="card-body ">
-                        <h5 class="card-title fs-5">3</h5><!--title-->
-                        <p class="card-text fs-6 "></p><!--content-->
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card-height">
-                      <div class="card-body ">
-                        <h5 class="card-title fs-5">4</h5><!--title-->
-                        <p class="card-text fs-6 "></p><!--content-->
-                      </div>
-                    </div>
-                  </li>
-                  
-                </ul><!--GLIDE SLIDES ENDS HERE-->
-              </div><!--GLIDE TRACK ENDS HERE -->
-            </div><!--GLIDE ENDS HERE -->
-          </section>
-    
+    <div id="collapse-SideNav" class=" d-none d-md-block bg-body visible h-100 "></div>
+
+    <div id="main-layout" class="border bg-body flex-grow-1 h-100">
+      <header id="main-header"></header><!--HEADER ENDS HERE-->
+
+      <div id="main-content" class="m-0 bg-light h-92 overflow-auto">
+
+        <section id="top-section" class="mx-2">
+          <div class="d-flex justify-content-end">
+            <a href="kpi.html" class="me-2 btn fs-6 text-dark text-decoration-underline no-glow">View all</a>
+          </div>
+          <div class="glide ">
+            <div class="glide__track " data-glide-el="track">
+              <ul id="main-glider-slides" class="glide__slides">
+              </ul><!--GLIDE SLIDES ENDS HERE-->
+            </div><!--GLIDE TRACK ENDS HERE -->
+          </div><!--GLIDE ENDS HERE -->
+        </section>
+
+        <section id="middle-section" class="shadow bg-body rounded m-2 p-2">
+          <h2 class="fs-5 fw-bold text-dark">Statistics</h2>
+          <div dive id="columnchart_values" class="container-md " style="width: auto;"></div>
+        </section>
         
-    
-        </div><!--MAIN CONTENT ENDS HERE-->
-      </div><!--MAIN LAYOUT ENDS HERE-->
-    
-    </div><!--MAIN CONTAINER ROW ENDS HEHE-->
+
+        <section id="bottom-section" class="shadow bg-body rounded p-2 m-2">
+          <div class="d-flex mb-3 mt-2">
+            <h2 class="fs-5 fw-bold text-dark my-0 me-auto">Goals </h2>
+            <div class="d-flex">
+              <label for="sortby" class="fs-6">Sort by:</label>
+              <select class="col py-0 m-0 border-0 fw-bold form-select no-glow fs-6 " id="sortby" aria-label="Floating label select example">
+                <option selected value="#">Newest</option>
+                <option value="#">Date Created</option>
+                <option value="#">Completed</option>
+              </select>
+            </div>
+          </div><!--SUB-HEADING ENDS HERE--> 
+          
+          <!--ACCORDING-->  
+          <div class="p-2" id="main-goal-list"></div>
+        </section>
+      </div><!--MAIN CONTENT ENDS HERE-->
+    </div><!--MAIN LAYOUT ENDS HERE-->
   </div><!--MAIN CONTAINER ENDS HERE-->
-
-
-
 
   <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
   <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
-
-
-
-<!-- <div class="card">
-  <div class="card-body ">
-    <h5 class="card-title fs-5">title</h5>
-    <p class="card-text fs-6 ">text below as a natural lead-in to additional content.</p>
-    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-  <!-- </div>
-</div>  -->
-
-
-<!-- 
-
-<h2 class="fs-5 fw-bold text-dark">Statistics</h2>
-<div>
-  <div dive id="columnchart_values" class="container-md " style="width: auto;"></div>
-  <div id="chart_div" style="width: 100%; height: 500px;"></div>
-</div>
-<div class="bg-organe">
-
-</div> -->
 
 

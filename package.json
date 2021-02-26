@@ -1,0 +1,35 @@
+{
+  "name": "incrementum-v5",
+  "version": "1.0.0",
+  "description": "Goal Tracking app",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwesibazil/incrementum-v5.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "AJAX",
+    "PHP",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Kwesi Bazil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwesibazil/incrementum-v5/issues"
+  },
+  "homepage": "https://github.com/kwesibazil/incrementum-v5#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "bootstrap": "^5.0.0-beta2",
+    "bootstrap-icons": "^1.4.0",
+    "hover.css": "^2.3.2"
+  }
+}
